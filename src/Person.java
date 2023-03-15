@@ -23,4 +23,8 @@ public class Person {
     public String getName() {
         return firstName + " " + secondName;
     }
+
+    public int getTickets() {
+        return ticketNum;
+    }
 }

@@ -19,7 +19,7 @@ public class Main {
         while (!queue.isEmpty()) {
             Person ps = queue.poll();
             ps.dropTicket();
-            System.out.printf("%s прокатился на атракционе.\n", ps.getName());
+            System.out.printf("%s прокатился на атракционе, билетов осталось %d\n", ps.getName(), ps.getTickets());
             if (ps.haveTickets()) {
                 queue.add(ps);
             }
